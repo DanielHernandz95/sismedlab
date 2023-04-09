@@ -16,7 +16,7 @@ Route::get('/', function () {
 });
 
 Auth::routes();
-
+Route::get('/info', 'PrecalificacionElController@index');
 Route::get('/home', 'HomeController@index')->name('home');
 Route::resource('crearPcl', 'CrearPclController');
 Route::resource('Siniestro', 'CrearPclController');

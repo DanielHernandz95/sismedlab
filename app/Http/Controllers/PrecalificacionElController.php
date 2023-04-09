@@ -4,6 +4,7 @@ namespace App\Http\Controllers;
 
 use Illuminate\Http\Request;
 use App\tbl_el_precalificacione;
+use Illuminate\Support\Facades\DB;
 
 class PrecalificacionElController extends Controller {
 
@@ -13,7 +14,8 @@ class PrecalificacionElController extends Controller {
      * @return \Illuminate\Http\Response
      */
     public function index() {
-        //
+        //        DB::insert('insert into users (id, name) values (?, ?)', [1, 'Marc']);
+        return 'sirve';
     }
 
     /**
