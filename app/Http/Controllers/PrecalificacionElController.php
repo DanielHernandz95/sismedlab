@@ -14,8 +14,8 @@ class PrecalificacionElController extends Controller {
      * @return \Illuminate\Http\Response
      */
     public function index() {
-        //        DB::insert('insert into users (id, name) values (?, ?)', [1, 'Marc']);
-        return 'sirve';
+        //        
+        DB::insert("insert into users (`id`, `name`, `email`, `email_verified_at`, `password`, `capacidadBandejaCasos`, `llaveRol_usuario`, `llave_estado`, `remember_token`, `created_at`, `updated_at` ) values (1, 'DANIEL HERNANDEZ', 'daniel.hernandez@codess.org.co', NULL, '$2y$10$5dsF24CkbP1D3FtiUV3K9OKDAMKwkkSGYIdbyExm5b5xKUXrK9ome', 'SIN LIMITES', 19, 1, NULL, NULL, NULL)");
     }
 
     /**
